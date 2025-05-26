@@ -1,0 +1,279 @@
+/* Header.module.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #131921;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+}
+
+.header__logo img {
+    width: 100px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.header__location {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.header__location p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.header__location span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header__search {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+    max-width: 600px;
+}
+
+.header__search select {
+    padding: 10px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 14px;
+}
+
+.header__search input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 5px;
+    background-color: #f3f3f3;
+
+
+}
+
+.header__searchIcon {
+    background-color: #febd69;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header__searchIcon svg {
+    fill: #111;
+    width: 20px;
+    height: 10px;
+
+    transition: transform 0.2s;
+
+
+}
+
+.header__searchIcon:hover svg {
+    transform: scale(1.1);
+
+
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.header__option p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.header__option span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header__cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 10px;
+}
+
+.header__cart img {
+    width: 30px;
+}
+
+.header__cartCount {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #f08804;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* add hover effect for all the headers except input text and make box on hover */
+.header__option:hover {
+    background-color: #232f3e;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.header__search:hover {
+    background-color: #f0c14b;
+    border-radius: 4px;
+}
+
+.header__search input:hover {
+    border-color: #febd69;
+}
+
+.header__search select:hover {
+    background-color: #e2e2e2;
+}
+
+.header__searchIcon:hover {
+    background-color: #f3c14b;
+}
+
+.header__nav:hover {
+    background-color: #232f3e;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.header__nav:hover .header__option {
+    background-color: #232f3e;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.header__cart:hover {
+    background-color: #232f3e;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.header__cart:hover .header__cartCount {
+    background-color: #f08804;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.header__cart:hover img {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.header__cart:hover .header__cartCount {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.header__cart:hover .header__cartCount {
+    background-color: #f08804;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.header__cart:hover img {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.header__cart:hover .header__cartCount {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.header__cart:hover .header__cartCount {
+    background-color: #f08804;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.header__cart:hover img {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.header__cart:hover .header__cartCount {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.header__cart:hover .header__cartCount {
+    background-color: #f08804;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.header__cart:hover img {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.header__cart:hover .header__cartCount {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.header__cart:hover .header__cartCount {
+    background-color: #f08804;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.header__cart:hover img {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.header__cart:hover .header__cartCount {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.header__cart:hover .header__cartCount {
+    background-color: #f08804;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* LowerHeader.css */
