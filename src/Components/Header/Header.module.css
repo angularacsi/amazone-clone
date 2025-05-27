@@ -277,3 +277,31 @@
 }
 
 /* LowerHeader.css */
+
+/* i want to make the page responsive  */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__search {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .header__logo img {
+        width: 80px;
+        height: 30px;
+    }
+
+    .header__nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__option {
+        margin: 5px 0;
+    }
+
+}
