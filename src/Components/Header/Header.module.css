@@ -27,6 +27,9 @@
     margin-left: 10px;
 }
 
+/* i need css for all anchor tags */
+
+
 .header__location p {
     font-size: 12px;
     margin: 0;
@@ -101,6 +104,11 @@
     font-size: 12px;
     margin: 0;
 }
+
+.header__option:hover {
+    color: #febd69;
+}
+
 
 .header__option span {
     font-size: 14px;
@@ -274,6 +282,21 @@
     border-radius: 50%;
     font-weight: bold;
     font-size: 12px;
+}
+
+/* Style for all anchor tags inside header */
+.header a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+/* On hover - make it clearer it's clickable */
+.header a:hover {
+    color: #febd69;
+    background-color: #232f3e;
+    padding: 8px;
+    border-radius: 4px;
 }
 
 /* LowerHeader.css */

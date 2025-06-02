@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Header.module.css';
 import LowerHeader from './LowerHeader';
 import { FaSearch } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 
@@ -11,7 +12,10 @@ function Header() {
     <div className={classes.header__container}>
       <header className={classes.header}>
         <div className={classes.header__logo}>
-          <img src="https://static.dezeen.com/uploads/2025/05/amazon-rebrand-2025_dezeen_2364_col_1-1.jpg" alt="Amazon Logo" />
+          {/* link to the home page when we click the logo */}
+          <Link to="/">
+            <img src="https://static.dezeen.com/uploads/2025/05/amazon-rebrand-2025_dezeen_2364_col_1-1.jpg" alt="Amazon Logo" />
+          </Link>
         </div>
         <div className={classes.header__location}>
           <p>Delivered To Ethiopians</p>
@@ -32,20 +36,27 @@ function Header() {
         <div className={classes.header__nav}>
           <div className={classes.header__option}>
 
-            <a><p>Hello, Sign in</p>
+            <Link to='/signup'><p>Hello, Sign in</p>
               <span>Account & Lists</span>
-            </a>
+            </Link>
+          </div>
 
-          </div>
           <div className={classes.header__option}>
-            <p>Returns</p>
-            <span>& Orders</span>
+            <Link to="/order"  >
+              <p>Retur tons</p>
+              <span>& Orders</span>
+            </Link>
           </div>
+
+
           <div className={classes.header__cart}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Cart Icon" />
-            <span>Cart</span>
-            <span className={classes.header__cartCount}>0</span>
+            <Link to="/cart">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Cart Icon" />
+              <span>Cart</span>
+              <span className={classes.header__cartCount}>0</span>
+            </Link>
           </div>
+
         </div>
 
       </header>
