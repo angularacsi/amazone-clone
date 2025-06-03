@@ -1,0 +1,67 @@
+.amazonFooter {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footerTop {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #37475a;
+}
+
+.backToTop {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.backToTop:hover {
+    text-decoration: underline;
+}
+
+.footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerColumn {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footerColumn h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #3a4553;
+    padding-bottom: 4px;
+}
+
+.footerColumn a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.footerColumn a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footerLinks {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footerColumn {
+        width: 100%;
+    }
+}
